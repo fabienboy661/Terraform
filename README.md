@@ -110,6 +110,25 @@ You can also export config to use kubectl: export KUBECONFIG=./kubeconfig_myapp-
     ✅ Designed for high availability across multiple availability zones
     ✅ Used EKS modules and providers for complete automation
 
+Initialize Terraform
+terraform init
+
+Validate Configuration
+terraform validate
+
+Review Infrastructure Plan
+terraform plan
+
+Test Kubernetes Access
+kubectl get nodes
+kubectl get pods -A
+
+
+Security Notes
+
+    Only your IP is allowed via my_ip in the default security group.
+    Use Terraform Cloud or a backend (S3 + DynamoDB) for team collaboration and state locking.
+    
 Author
 Fabien Andrianambinintsoa
 DevOps Engineer | Kubernetes | AWS | Terraform
